@@ -22,7 +22,7 @@ nav{
   ul{
     list-style: none;
     display: flex;
-    width: 65%;
+    /* width: 50% !important; */
     justify-content: end;
     gap: 1.5rem;
     li{
@@ -41,7 +41,7 @@ nav{
   }
   .carito_perfil{
     display: flex;
-    width: 35%;
+    /* width: 50% !important; */
     justify-content: end;
     gap: 1rem;
   }
@@ -53,12 +53,13 @@ main{
 }
 .contenedor{
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     gap: 4rem;
     justify-content: center;
     align-items: center;
+    padding: 0 ;
     .card{
         box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.308);
         border-radius: 10px;
@@ -71,6 +72,7 @@ main{
         text-align: center;
         gap: 1rem;
         height: 100%;
+
         &:hover{
             .producto{
                 rotate: -30deg;
@@ -82,6 +84,9 @@ main{
             cursor: pointer;
             }
 
+        }
+        h2{
+            font-size: 23px !important;
         }
         .producto{
             width: 73%;
